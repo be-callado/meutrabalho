@@ -1,0 +1,191 @@
+/* Estilos Gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+/* Cabeçalho */
+header ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    list-style: none;
+}
+
+header li {
+    margin: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgba(224, 211, 222);
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+header a:hover {
+    color: rgba(235, 230, 234);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Corpo do Site */
+body {
+    margin: 0;
+    background-image: url(https://i.pinimg.com/564x/20/69/d0/2069d02781e8fd87ee202801d47d12f5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(224, 211, 222);
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2, h5, h6 {
+    margin: 0;
+    color: rgb(199, 171, 195);
+}
+
+h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 400%;
+    font-weight: 200;
+    margin-top: 2%;
+}
+
+h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(224, 211, 222);
+}
+
+h5 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 100%;
+    font-weight: 300;
+    color: rgb(224, 211, 222);
+}
+
+h6 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 90%;
+    font-weight: 300;
+    color: rgb(224, 211, 222);
+    margin: 10px 0 5px;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+}
+
+.container, #about, #formation, #portfolio, #contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Lista de Formação */
+.formation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.formation-list li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(224, 211, 222, 0.2);
+}
+
+.formation-list h2 {
+    font-size: 1.5em;
+    color: rgb(224, 211, 222);
+    margin-bottom: 10px;
+}
+
+.formation-list p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Link do LinkedIn */
+.linkedin-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: rgb(224, 211, 222);
+    text-decoration: none;
+}
+
+.linkedin-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1em;
+    border: 1px solid rgba(224, 211, 222, 0.5);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(224, 211, 222);
+}
+
+form input[type="submit"] {
+    background-color: rgb(199, 171, 195);
+    color: rgb(224, 211, 222);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(179, 153, 176);
+}
+
+/* Responsividade */
+@media only screen and (max-width: 480px) {
+    header ul {
+        flex-direction: column;
+    }
+    header li {
+        margin: 5px 0;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    .container, #about, #formation, #portfolio, #contact {
+        padding: 10px;
+    }
+    .formation-list {
+        padding: 0;
+    }
+}
